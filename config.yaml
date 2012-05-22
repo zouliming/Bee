@@ -1,0 +1,6 @@
+---
+name: zouliming
+version: 2
+handle:
+- rewrite: if(!is_dir() && !is_file()) goto "index.php?%{QUERY_STRING}"
+...

@@ -1,0 +1,358 @@
+/* 
+    Document   : screen
+    Created on : 2012-3-19, 16:04:05
+    Author     : zouliming
+    Description: 首页样式
+*/
+/* reset styles 
+--------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none outside none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* misc. 
+--------------------------------------------- */
+
+hr, .hide {
+	display: none;
+}
+a img {
+	border: none;
+}
+/* main styles
+--------------------------------------------- */
+body { 
+    background-color: #eee;
+    display: block;
+    font-size: 70%;
+    background: url(../../img/bg-darker.jpg) fixed;
+}
+/* links */
+a:link, a:visited {
+    color: #FC6B35;
+    font-weight: normal;
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    color: #BA3B0D;
+}
+strong {
+	font-weight:bold;
+}
+/* page structure 
+--------------------------------------------- */
+#container{
+	padding:20px 0 40px;
+}
+#wrap {
+    background-color: #fff;
+    margin: 0 auto 20px;
+    max-width: 980px;
+    font-size: 1.3em;
+    border-radius: 8px 8px 8px 8px;
+}
+#wrap-inner {
+    padding: 0 50px;
+}
+#extra {
+	padding: 50px 50px 20px 50px;
+	background: rgba(78, 68, 60, 0.75) url(../../img/bg-dark2.jpg) fixed;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+footer[role="contentinfo"] {
+	max-width: 980px;
+	margin: 0 auto;
+	font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, sans-serif;
+	font-size: 1.2em;
+}
+/* header */
+header[role="banner"]{
+   padding: 30px 0 1.6em;
+}
+/* logo */
+#logo {
+	float: left;
+	width: 20%;
+	height: 64px;
+}
+#logo a {
+	display: block;
+	width: 57px;
+	height: 64px;
+}
+#logo img {
+	display: block;
+	border-radius:5px;
+}
+/* navigation */
+nav[role="navigation"] ul li{
+	float: left;
+	margin: 16px 0 0;
+	width: 20%;
+}
+nav[role="navigation"] ul li a {
+	display: block;
+	float: left;
+	width: 100%;
+	font-family: proxima-nova-1, proxima-nova-2, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+nav[role="navigation"] ul li a strong {
+	display: block;
+	padding: 0;
+	color: rgba(78, 68, 60, 0.5);
+	-webkit-transition: color 0.2s ease-in-out;
+   	-moz-transition: color 0.2s ease-in-out;
+ 	-o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+nav[role="navigation"] ul li a em {
+	display: block;
+	font-size: .85em;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+	letter-spacing: 0;
+	color: rgba(78, 68, 60, 0.35);
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+}
+nav[role="navigation"] ul li a:hover strong,
+nav[role="navigation"] ul li.active a strong {
+	color: #4e443c;
+}
+nav[role="navigation"] ul li a:hover em,
+nav[role="navigation"] ul li.active a em {
+	color: rgba(78, 68, 60, 0.7);
+}
+/* main */
+#main {
+	font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, sans-serif;
+	font-size: 1em;
+	line-height: 1.6;
+	border-top: 4px double rgba(78, 68, 60, 0.1);
+	padding-top:1.2em;
+}
+#main a {
+	text-decoration: underline;
+}
+/* headings */
+#main h2 {
+	margin: 0 0 1em 0;
+	font-family: microsoft yahei, proxima-nova-2, Helvetica, Arial, sans-serif;
+	font-size: 1.6em;
+	font-weight: normal;
+	line-height: 1;
+}
+#main h2 a {	
+	color: #4e443c;
+	text-decoration: none;
+}
+#main h2 a:hover {	
+	color: #fc6b35;
+}
+/* blog entries */
+#main article {
+	position: relative;
+	margin: 0 0 2.8em 0;
+	padding: 0 0 1em 20%;
+	border-bottom: 4px double rgba(78, 68, 60, 0.1);
+}
+#main article:last-of-type {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+article aside {
+	float: left;
+	width: 20%;
+	margin: 0.3em 0 0 -25%;
+	font-family: proxima-nova-1, proxima-nova-2, Helvetica, Arial, sans-serif;
+	font-size: .85em;
+	line-height: 2;
+	color: rgba(78, 68, 60, 0.7);
+}
+#main article aside a:link,
+#main article aside a:visited,
+#main article aside ul li a {
+	color: rgba(78, 68, 60, 0.6);
+}
+#main article aside ul {
+	margin: 0;
+}
+#main article aside ul li {
+	margin: 0;
+	list-style: none;
+	font-weight: normal;
+	color: rgba(78, 68, 60, 0.7);
+}
+article aside ul li h4 {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+#main a.article-perm {
+	position: absolute;
+	top: .3em;
+	right: -86px;
+	width: 36px;
+	height: 31px;
+	text-decoration: none;
+	opacity: .5;
+	overflow: hidden;
+	-webkit-transition: width .3s ease-in, opacity .2s ease-in;
+	-moz-transition: width .3s ease-in, opacity .2s ease-in;
+	-o-transition: width .3s ease-in, opacity .2s ease-in;
+	transition: width .3s ease-in, opacity .2s ease-in;
+}
+a.article-perm img {
+	position: absolute;
+	right: 0;
+}
+a.article-perm span {
+	position: absolute;
+	right: 36px;
+	display: block;
+	padding: 0 10px;
+	font-family: proxima-nova-1, proxima-nova-2, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	line-height: 31px;
+	background: rgba(78, 68, 60, 0.15);
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#main a.article-perm:hover {
+	border: none;
+	opacity: .85;
+	width: 200px;
+}
+/* extra styles 
+--------------------------------------------- */
+#extra div.mod {
+	margin-bottom: 0;
+}
+#extra div.mod h3 {
+	margin: 0;
+	padding: 0 0 15px 0;
+	font-size: .9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #ecd67e;
+}
+#extra div.mod p {
+	margin: 0 30px 0 0;
+	font-size: .95em;
+	line-height: 1.6;
+	color: rgba(245, 239, 224, 0.65);
+}
+#extra div.mod-main p {
+	margin: 0 0 30px 0;
+	font-size: 1em;
+	font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, sans-serif;
+}
+#extra div.mod-main p a {
+	margin-left: 3px;
+	font-family: proxima-nova-1, proxima-nova-2, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: .85em;
+}
+/* pagination */
+#main div.paging {
+	margin: 0 0 -26px 0;
+	text-align: center;
+}
+#main div.paging a {
+	margin: 0 5px;
+	border: none;
+	opacity: 1;
+	-webkit-transition: opacity .2s ease;
+	-moz-transition: opacity .2s ease;
+	-o-transition: opacity .2s ease;
+	transition: opacity .2s ease;
+}
+#main div.paging a:hover {
+	opacity: .8;
+}
+/* footer 
+--------------------------------------------- */
+footer[role="contentinfo"] p {
+	margin: 0 50px 15px 50px;
+	font-family: proxima-nova-1, proxima-nova-2, Helvetica, Arial, sans-serif;
+	line-height: 1.4;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	color: rgba(78, 68, 60, 0.6);
+}
+footer[role="contentinfo"] p a {
+	font-weight: bold;
+	text-transform: none;
+	letter-spacing: 0;
+	color: rgba(78, 68, 60, 0.6);
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+}
+footer[role="contentinfo"] p a:hover {
+	color: #fc6b35;
+}
+footer[role="contentinfo"] p:last-child {
+	margin-bottom: 0;
+}
+/* self-clear floats */
+nav[role="navigation"]:after,
+#main:after,
+article:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
