@@ -8,9 +8,10 @@
 ## 为什么很久没开发了
 后来因为工作生活比较忙，很多新技术层出不穷，这个项目就暂时告一段落了。
 
-## 还有哪些本来打算加进来的功能？
-- sss
-- ddd
-- ddd
-- ddd
-- ddd
+## 之前记录的一些尚未完成的功能，后续有时间继续完善
+- 类似Yii的捕捉Exception和Error的功能
+- Layout里title的设置
+- 权限的控制
+- 生成Model的时候，带上字段
+- Validator不支持新的验证规则
+- 把框架里的ShowError改成throwError
